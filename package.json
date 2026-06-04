@@ -1,0 +1,17 @@
+{
+  "name": "publora-mvp",
+  "version": "1.0.0",
+  "description": "Open-source social media posting platform - Publora clone",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "test": "node --test tests/*.test.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "cors": "^2.8.5",
+    "axios": "^1.7.9"
+  }
+}
