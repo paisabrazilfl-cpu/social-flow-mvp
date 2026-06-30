@@ -1,0 +1,20 @@
+# Render Blueprint
+# https://render.com/docs/blueprint-spec
+
+services:
+  - type: web
+    name: social-flow-mvp
+    runtime: node
+    region: oregon
+    plan: free
+    repo: https://github.com/paisabrazilfl-cpu/social-flow-mvp
+    branch: main
+    autoDeploy: true
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
